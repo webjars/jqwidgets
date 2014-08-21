@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>jqwidgets</artifactId>
-    <version>3.4.1-SNAPSHOT</version>
+    <version>3.4.0.1-SNAPSHOT</version>
     <name>jQWidgets</name>
     <description>WebJar for jQWidgets</description>
     <url>http://webjars.org</url>
@@ -103,7 +103,7 @@
                                 <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}/zip" />
                                 <echo message="moving resources" />
                                 <move todir="${destDir}">
-                                    <fileset dir="${project.build.directory}/zip" includes="jqwidgets/ styles/ images/" />
+                                    <fileset dir="${project.build.directory}/zip/jqwidgets" />
                                 </move>
                             </target>
                         </configuration>
