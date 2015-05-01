@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>jqwidgets</artifactId>
-    <version>3.8.0-SNAPSHOT</version>
+    <version>3.8.0</version>
     <name>jQWidgets</name>
     <description>WebJar for jQWidgets</description>
     <url>http://webjars.org</url>
@@ -58,7 +58,7 @@
         <url>http://github.com/webjars/jqwidgets</url>
         <connection>scm:git:https://github.com/webjars/jqwidgets.git</connection>
         <developerConnection>scm:git:https://github.com/webjars/jqwidgets.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>jqwidgets-3.8.0</tag>
     </scm>
     
     <dependencies>
@@ -99,11 +99,11 @@
                         <goals><goal>run</goal></goals>
                         <configuration>
                             <target>
-                                <echo message="unzip archive"/>
-                                <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}/zip"/>
-                                <echo message="moving resources"/>
+                                <echo message="unzip archive" />
+                                <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}/zip" />
+                                <echo message="moving resources" />
                                 <move todir="${destDir}">
-                                    <fileset dir="${project.build.directory}/zip/jqwidgets"/>
+                                    <fileset dir="${project.build.directory}/zip/jqwidgets" />
                                 </move>
                             </target>
                         </configuration>
