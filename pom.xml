@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>jqwidgets</artifactId>
-    <version>4.4.1-SNAPSHOT</version>
+    <version>4.5.0-SNAPSHOT</version>
     <name>jQWidgets</name>
     <description>WebJar for jQWidgets</description>
     <url>http://webjars.org</url>
